@@ -1,0 +1,251 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+ul, 
+ol {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: url(../images/wave.png) no-repeat bottom;
+    background-size: 100%;
+}
+
+
+.heading {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.heading__title {
+    font-family: Lato;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.table {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.table__header {
+    display: flex;
+}
+
+.table__group--id {
+    width: 160px;
+    height: 50px;
+    padding-top: 18px;
+    text-align: center;
+    background-color:#F5F5F5;
+}
+
+.table__group--name {
+    width: 541px;
+    height: 50px;
+    padding-left: 73px;
+    padding-top: 18px;
+    margin-left: 19px;
+    background-color:#F5F5F5;
+}
+
+.table__item {
+    display: flex;
+    margin-top: 16px;    
+}
+
+.table__item--id {
+    width: 160px;
+    height: 50px;
+    padding-top:18px;
+    text-align: center;
+    background-color:#F8FAFF;
+}
+
+.table__item--content {
+    width: 541px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 19px;
+    padding-left: 73px;
+    padding-bottom: 12px;
+    background-color:#F8FAFF;
+
+}
+
+.table__item--group--link {   
+    margin-top: 18px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+.table__link {
+    padding: 6px 10px;
+    color:#243659;
+    background-color: #F8FAFF;
+    border: 1px solid #d1d0d0;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.table__link:hover {
+    background-color: #d6d6d6;
+}
+
+.table__link:active {
+    background-color: #243659;
+    color: #F8FAFF;
+}
+
+.table__item--full--name {
+    position: relative;
+    padding-top: 18px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    }
+
+
+.table__item--full--name::before {
+    margin-right: 30px;
+    content:'';
+    display:inline-block;
+    border-style: solid;
+    border-width: 5px 0 5px 15px;
+    border-color: transparent transparent transparent #243659;
+}
+
+
+.link {
+    padding: 18px 80px;
+    background-color: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    background-color: #d6d6d6;
+}
+
+.link:active {
+    background-color: #243659;
+    color: #F5F5F5;
+}
+
+.footer {
+    padding-top: 108px;
+    padding-bottom: 307px;
+}
+
+.app {
+    width:50%;
+    max-width: 1440px;  
+    margin: 0 auto;
+}
+
+.main__header {
+    width: 250px;
+    height: 50px;
+    padding: 18px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main__input {
+    width: 430px;
+    height: 50px;
+    padding-top: 18px;
+    padding-left: 70px;
+    margin-left: 20px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    border-radius: 5px;
+    color: #00000066;
+    background-color: #F5F5F5;
+    text-transform: uppercase;
+}
+
+.app__footer {
+    margin-top: 522px;
+    margin-bottom: 307px;
+}
+
+.scroller {
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.gamburger::before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: #243659;
+    border-radius: 5px;
+    bottom: 10px;
+}
+
+.gamburger {
+    position: absolute;
+    display: none;
+    height: 4px;
+    width: 50px;
+    top: 80px;
+    right: 50px;
+    background-color: #243659;
+    border-radius: 5px;
+}
+
+.gamburger::after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    height: 4px;
+    width: 50px;
+    margin-top: 10px;
+    background-color: #243659;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .gamburger{
+      display: inline-block;
+    }
+  }
